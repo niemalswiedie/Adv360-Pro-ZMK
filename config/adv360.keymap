@@ -25,11 +25,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &mkp MB4                                                      &mkp MB5       &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &mo 1                                                         &mo 2          &kp Y   &kp U   &kp I      &kp O     &kp P          &kp RIGHT_BRACKET
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp PG_UP  &kp LCTRL  &kp LALT           &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp J   &kp K      &kp L     &kp SEMI       &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &kp RIGHT_ALT      &tog 3                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&mo 1      &kp GRAVE  &kp NUBS  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp HOME           &kp END   &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp BACKSLASH  &mo 1
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &kp C_MUTE                                                     &mkp MB5       &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &mo 1                                                          &mo 5          &kp Y   &kp U   &kp I      &kp O     &kp P          &kp RIGHT_BRACKET
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp PG_UP   &kp LCTRL  &kp LALT           &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp J   &kp K      &kp L     &kp SEMI       &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                          &kp RIGHT_ALT      &tog 2                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&mo 1      &kp GRAVE  &kp NUBS  &kp LEFT  &kp RIGHT          &kp BSPC    &kp DEL    &kp HOME           &kp END   &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp BACKSLASH  &mo 1
             >;
         };
 
@@ -44,11 +44,6 @@
             >;
         };
 
-        extra1 {
-            display-name = "Red";
-            status = "reserved";
-        };
-
         keypad {
             display-name = "Kp";
             bindings = <
@@ -58,6 +53,21 @@
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp RALT      &tog 0                          &kp N   &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
 &mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp HOME      &kp END   &kp ENTER  &kp KP_N0          &kp UP_ARROW  &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 1
             >;
+        };
+
+        mod {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        extra1 {
+            display-name = "Red";
+            status = "reserved";
         };
 
         extra2 {
