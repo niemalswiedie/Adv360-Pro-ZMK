@@ -72,7 +72,7 @@
 &trans  &trans           &trans             &trans      &trans           &trans  &none                                       &none   &trans  &trans          &trans            &trans      &trans   &trans
 &trans  &trans           &trans             &trans      &trans           &trans  &none                                       &trans  &trans  &trans          &trans            &trans      &trans   &trans
 &trans  &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp F13  &trans
-&trans  &trans           &trans             &trans      &trans           &trans                  &trans      &trans                  &trans  &trans          &trans            &trans      &trans   &trans
+&trans  &trans           &trans             &trans      &trans           &trans                  &trans      &none                   &trans  &trans          &trans            &trans      &trans   &trans
 &trans  &trans           &trans             &trans      &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans            &trans      &trans   &trans
             >;
         };
