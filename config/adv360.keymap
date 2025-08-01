@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -28,20 +29,20 @@
             display-name = "Base";
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &kp CAPS                                                      &mo 4          &kp N6  &kp N7          &kp N8        &kp N9         &kp N0             &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 5                                                        &tog 2         &kp Y   &kp U           &kp I         &kp O          &kp P              &kp LEFT_BRACKET
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                        &tog 2         &kp Y   &kp U           &kp I         &kp O          &kp P              &kp LEFT_BRACKET
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp PG_UP  &kp LCTRL  &kp LALT           &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp J           &kp K         &kp L          &kp SEMI           &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &kp RIGHT_ALT      &tog 3                              &kp N   &kp M           &kp COMMA     &kp DOT        &kp FSLH           &kp RSHFT
 &mo 5      &kp GRAVE  &kp NUBS  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp HOME           &kp END   &kp ENTER  &kp SPACE              &kp DOWN_ARROW  &kp UP_ARROW  &kp BACKSLASH  &kp RIGHT_BRACKET  &mo 5
             >;
         };
 
-        layer_9 {
+        maus {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &none                                       &none   &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &none                                       &none   &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &trans    &trans    &trans    &trans    &trans                    &trans      &none                   &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans    &trans    &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans        &trans           &trans
             >;
         };
 
@@ -79,11 +80,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &none                                       &none   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &none                   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                        &none    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                        &none    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans      &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &none                    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &kp F11  &trans  &trans      &trans  &trans  &kp F12          &trans  &trans  &trans  &trans   &trans
             >;
         };
 
