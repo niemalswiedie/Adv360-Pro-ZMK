@@ -28,11 +28,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 6                                                        &mo 3          &kp N6  &kp N7          &kp N8        &kp N9         &kp N0             &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                        &tog 2         &kp Y   &kp U           &kp I         &kp O          &kp P              &kp LEFT_BRACKET
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &mo 2                                                         &mo 4          &kp N6  &kp N7          &kp N8        &kp N9         &kp N0             &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                        &tog 3         &kp Y   &kp U           &kp I         &kp O          &kp P              &kp LEFT_BRACKET
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp PG_UP  &kp LCTRL  &kp LEFT_ALT       &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp J           &kp K         &kp L          &kp SEMI           &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &kp RIGHT_ALT      &tog 5                              &kp N   &kp M           &kp COMMA     &kp DOT        &kp FSLH           &kp RSHFT
-&mo 4      &kp GRAVE  &kp NUBS  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp HOME           &kp END   &kp ENTER  &kp SPACE              &kp DOWN_ARROW  &kp UP_ARROW  &kp BACKSLASH  &kp RIGHT_BRACKET  &mo 4
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &kp RIGHT_ALT      &tog 6                              &kp N   &kp M           &kp COMMA     &kp DOT        &kp FSLH           &kp RSHFT
+&mo 5      &kp GRAVE  &kp NUBS  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp HOME           &kp END   &kp ENTER  &kp SPACE              &kp DOWN_ARROW  &kp UP_ARROW  &kp BACKSLASH  &kp RIGHT_BRACKET  &mo 5
             >;
         };
 
@@ -43,6 +43,16 @@
 &trans  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans          &trans           &trans      &trans  &trans          &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans    &trans    &trans    &trans    &trans                                     &trans      &none                                 &trans          &trans          &trans        &trans           &trans  &trans
 &trans  &trans    &trans    &trans    &trans              &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &trans      &trans  &mmv MOVE_DOWN  &mmv MOVE_UP                  &trans          &trans        &trans           &trans  &trans
+            >;
+        };
+
+        open {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &none                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -85,16 +95,6 @@
 &none  &none  &none  &none  &none  &none  &none     &kp LCTRL  &kp LEFT_GUI      &kp LGUI  &kp RCTRL  &none      &none  &kp KP_N4     &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &none
 &none  &none  &none  &none  &none  &none                       &kp RALT          &trans                          &none  &kp KP_N1     &kp KP_N2      &kp KP_N3        &kp KP_ENTER  &none
 &none  &none  &none  &none  &none         &kp BSPC  &kp DEL    &kp HOME          &kp END   &kp ENTER  &kp KP_N0         &kp UP_ARROW  &kp DOWN       &kp KP_DOT       &kp KP_ENTER  &none
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans            &trans            &trans  &trans                                      &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans            &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LC(LEFT_GUI)  &kp LS(LEFT_GUI)  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans            &trans                  &trans      &none                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
