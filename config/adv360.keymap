@@ -29,11 +29,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &mo 2                                                         &mo 4          &kp N6  &kp N7          &kp N8        &kp N9         &kp N0             &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                        &tog 3         &kp Y   &kp U           &kp I         &kp O          &kp P              &kp LEFT_BRACKET
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp PG_UP  &kp LCTRL  &kp LEFT_ALT       &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp J           &kp K         &kp L          &kp SEMI           &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &kp RIGHT_ALT      &tog 5                              &kp N   &kp M           &kp COMMA     &kp DOT        &kp FSLH           &kp RSHFT
-&mo 6      &kp GRAVE  &kp NUBS  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp HOME           &kp END   &kp ENTER  &kp SPACE              &kp DOWN_ARROW  &kp UP_ARROW  &kp BACKSLASH  &kp RIGHT_BRACKET  &mo 6
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &kp LEFT_WIN                                                     &mo 4          &kp N6  &kp N7          &kp N8        &kp N9         &kp N0             &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                           &tog 3         &kp Y   &kp U           &kp I         &kp O          &kp P              &kp LEFT_BRACKET
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp PG_UP     &kp LCTRL  &kp LEFT_ALT       &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp J           &kp K         &kp L          &kp SEMI           &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                            &kp RIGHT_ALT      &tog 5                              &kp N   &kp M           &kp COMMA     &kp DOT        &kp FSLH           &kp RSHFT
+&mo 6      &kp GRAVE  &kp NUBS  &kp LEFT  &kp RIGHT          &kp BSPC      &kp DEL    &kp HOME           &kp END   &kp ENTER  &kp SPACE              &kp DOWN_ARROW  &kp UP_ARROW  &kp BACKSLASH  &kp RIGHT_BRACKET  &mo 6
             >;
         };
 
