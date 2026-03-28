@@ -49,18 +49,18 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&none  &none  &none  &none  &none  &none  &trans                                                  &none      &none  &kp KP_NUM    &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &none
-&none  &none  &none  &none  &none  &none  &none                                                   &none      &none  &kp KP_N7     &kp KP_N8      &kp KP_N9        &kp KP_PLUS   &none
-&none  &none  &none  &none  &none  &none  &none     &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &none      &none  &kp KP_N4     &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &none
-&none  &none  &none  &none  &none  &none                       &kp RALT      &none                           &none  &kp KP_N1     &kp KP_N2      &kp KP_N3        &kp KP_ENTER  &none
-&none  &none  &none  &none  &none         &kp BSPC  &kp DEL    &kp HOME      &kp END   &kp ENTER  &kp KP_N0         &kp UP_ARROW  &kp DOWN       &kp KP_DOT       &kp KP_ENTER  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans     &trans  &kp KP_NUM    &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &none      &trans  &kp KP_N7     &kp KP_N8      &kp KP_N9        &kp KP_PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &trans     &trans  &kp KP_N4     &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &kp RALT      &none                           &trans  &kp KP_N1     &kp KP_N2      &kp KP_N3        &kp KP_ENTER  &trans
+&none   &trans  &trans  &trans  &trans          &kp BSPC  &kp DEL    &kp HOME      &kp END   &kp ENTER  &kp KP_N0          &kp UP_ARROW  &kp DOWN       &kp KP_DOT       &kp KP_ENTER  &trans
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                             &trans    &trans  &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans    &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans    &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                             &trans    &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans    &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                      &trans      &none                       &trans  &trans          &trans          &trans        &trans           &trans
 &none   &trans  &trans  &trans  &trans          &mkp MB1  &mkp MB4  &trans      &trans  &mkp MB5  &mkp MB2          &trans          &trans          &trans        &trans           &none
@@ -69,7 +69,7 @@
 
         media {
             bindings = <
-&trans  &trans         &trans            &trans            &trans               &trans  &none                                       &none   &trans             &trans          &trans      &trans           &trans         &trans
+&trans  &trans         &trans            &trans            &trans               &trans  &trans                                      &trans  &trans             &trans          &trans      &trans           &trans         &trans
 &trans  &trans         &trans            &trans            &trans               &trans  &none                                       &none   &trans             &trans          &trans      &trans           &trans         &trans
 &trans  &kp LS(LC(D))  &kp C_PREV        &kp C_PLAY_PAUSE  &kp C_NEXT           &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp LG(C_MUTE)  &kp C_MUTE  &kp C_VOLUME_UP  &kp LS(LC(M))  &trans
 &trans  &trans         &kp LG(C_VOL_DN)  &trans            &kp LG(C_VOLUME_UP)  &trans                  &trans      &none                   &trans             &trans          &trans      &trans           &trans         &trans
@@ -80,7 +80,7 @@
         fn {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1      &kp F2      &kp F3        &kp F4        &kp F5  &none                                                   &none        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
+&trans  &kp F1      &kp F2      &kp F3        &kp F4        &kp F5  &trans                                                  &trans       &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
 &trans  &trans      &trans      &trans        &trans        &trans  &bootloader                                             &bootloader  &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &bt BT_CLR  &bl BL_TOG  &bl BL_CYCLE  &out OUT_TOG  &trans  &trans       &trans  &kp RIGHT_WIN      &trans  &trans  &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
 &trans  &trans      &trans      &trans        &trans        &trans                       &trans             &none                        &trans        &trans        &trans        &trans        &trans        &trans
