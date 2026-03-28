@@ -25,7 +25,7 @@
     combos {
         compatible = "zmk,combos";
 
-        middle_mb {
+        layer-2-mouse_middle_mb {
             bindings = <&mkp MB3>;
             key-positions = <65 70>;
             layers = <2>;
