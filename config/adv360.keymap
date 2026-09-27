@@ -5,8 +5,19 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
+    // Scaler fuer Scrollen (in dieser Firmware-Version nicht vordefiniert)
+    zip_scroll_scaler: zip_scroll_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
+        track-remainders;
+    };
+
     behaviors {
         #include "macros.dtsi"
       #include "version.dtsi"
@@ -28,7 +39,7 @@
         layer-2-mouse_middle_mb {
             bindings = <&mkp MB3>;
             key-positions = <65 70>;
-            layers = <1>;
+            layers = <1 2>;
         };
     };
 
@@ -97,5 +108,20 @@
 &trans  &trans      &trans      &trans        &trans                &kp F11      &trans  &trans      &trans  &trans  &kp F12                    &trans        &trans        &trans        &trans        &trans
             >;
         };
+    };
+};
+
+// Doppelte Geschwindigkeit, solange Layer 2 (mouse-2) aktiv ist, also Shift gehalten wird
+&mmv_input_listener {
+    fast_move {
+        layers = <2>;
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+};
+
+&msc_input_listener {
+    fast_scroll {
+        layers = <2>;
+        input-processors = <&zip_scroll_scaler 2 1>;
     };
 };
